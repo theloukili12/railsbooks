@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Book_title: MyString
+  language_book: MyString
+  Isbn: MyString
+  number_pages: 
+
+two:
+  Book_title: MyString
+  language_book: MyString
+  Isbn: MyString
+  number_pages: 

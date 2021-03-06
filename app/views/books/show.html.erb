@@ -1,0 +1,18 @@
+<br/><br/><br/>
+<div class="card text-center">
+  <div class="card-header">
+    Book information
+  </div>
+  <div class="card-body">
+    <p class="card-text"> <strong>Book title: </strong><%= @book.Book_title %></p>
+    <p class="card-text">  <strong>Language book: </strong>  <%= @book.language_book %></p>
+    <p class="card-text">  <strong>Isbn: </strong>  <%= @book.Isbn %></p>
+    <p class="card-text">  <strong>Number pages: </strong><%= @book.number_pages %></p>
+    <%= link_to 'Edit', edit_book_path(@book) , class:"btn btn-dark" %> |
+    <%= link_to 'Delete', @book, method: :delete, class:"btn btn-dark", data: { confirm: 'Are you sure?' } %> |
+    <%= link_to 'Back', books_path , class:"btn btn-dark" %>
+  </div>
+  <div class="card-footer text-muted">
+    <strong>Created at : </strong><%= @book.created_at %>
+  </div>
+</div>
