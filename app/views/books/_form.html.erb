@@ -33,7 +33,11 @@
 <br/>
  
 
-
+  <div class="field form-group">
+    <%= form.text_field :user_id,id: :book_user_id,type: :hidden,
+      class:"form-control" ,
+    value:current_user.id  %>
+  </div>
 
 <br/>
 
@@ -41,3 +45,4 @@
     <%= form.submit class:"btn btn-dark" %>
   </div>
 <% end %>
+
